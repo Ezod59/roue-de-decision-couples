@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable – CoupleDecide</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .error-page {
+      min-height: calc(100vh - 130px);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 2rem;
+    }
+    .error-content { max-width: 480px; }
+    .error-code {
+      font-size: 6rem; font-weight: 800; line-height: 1;
+      background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+    .error-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text); }
+    .error-desc { margin-bottom: 2rem; }
+    .error-cta {
+      display: inline-block; padding: 0.8rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+      color: white; border-radius: var(--radius-pill);
+      font-weight: 700; font-size: 0.95rem;
+      box-shadow: var(--shadow-neon);
+    }
+    .error-cta:hover { opacity: 0.9; color: white; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🎡</span>
+      <span>CoupleDecide</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Basculer mode sombre">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main class="error-page">
+  <div class="error-content">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page introuvable</h1>
+    <p class="error-desc">Oups ! Cette page n'existe pas (ou plus). Mais la roue, elle, tourne toujours&nbsp;🎡</p>
+    <a href="index.html" class="error-cta">↩ Retour à la roue</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-links">
+    <a href="about.html">À propos</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <p class="footer-copy">© 2026 CoupleDecide — Fait avec ❤️ pour les couples</p>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
