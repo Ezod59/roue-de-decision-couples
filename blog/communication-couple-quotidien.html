@@ -59,6 +59,13 @@
     .article-back { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 2rem; text-decoration: none; }
     .article-back:hover { color: var(--primary); }
     .lang-notice { display: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.75rem 1.25rem; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; text-align: center; }
+    .related-articles { margin: 2.5rem 0 1.5rem; }
+    .related-articles h3 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 1rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.875rem; }
+    .related-card { display: flex; flex-direction: column; gap: 0.3rem; padding: 1rem; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; transition: border-color var(--transition), transform var(--transition); }
+    .related-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .related-cat { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); }
+    .related-title { font-size: 0.875rem; font-weight: 600; color: var(--text); line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -166,6 +173,23 @@
 
     <p>La communication, au fond, c'est moins une compétence qu'une intention. L'intention d'être présent, de voir l'autre, de lui montrer qu'il compte. Les techniques aident, les rituels structurent — mais tout commence par ce choix simple de tourner son attention vers l'autre, encore et encore, même quand le quotidien tire dans d'autres directions.</p>
 
+    <div class="related-articles">
+      <h3>À lire aussi</h3>
+      <div class="related-grid">
+        <a href="complicite-couple-conseils.html" class="related-card">
+          <span class="related-cat">Conseils</span>
+          <span class="related-title">Entretenir la complicité dans son couple</span>
+        </a>
+        <a href="repartir-taches-menageres-couple.html" class="related-card">
+          <span class="related-cat">Tâches</span>
+          <span class="related-title">Tâches ménagères en couple : comment les répartir</span>
+        </a>
+        <a href="idees-cadeaux-partenaire.html" class="related-card">
+          <span class="related-cat">Conseils</span>
+          <span class="related-title">Idées de cadeaux originaux pour son partenaire</span>
+        </a>
+      </div>
+    </div>
     <div class="article-cta-box">
       <p>Une bonne communication commence souvent par une décision prise ensemble. Essayez la roue !</p>
       <a href="../index.html" class="about-cta">🎡 Tourner la roue</a>
