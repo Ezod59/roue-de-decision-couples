@@ -37,6 +37,7 @@
     .blog-card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted); margin-top: auto; }
     .blog-card-read { color: var(--primary); font-weight: 600; font-size: 0.875rem; text-decoration: none; }
     .blog-card-read:hover { opacity: 0.8; }
+    .lang-notice { display: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.75rem 1.25rem; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; text-align: center; }
   </style>
 </head>
 <body>
@@ -71,6 +72,7 @@
 
 <main>
   <div class="blog-hero">
+  <div id="lang-notice" class="lang-notice" role="note" style="max-width:600px; margin: 0 auto 1rem;">🇬🇧 Our articles are currently only available in French. The wheel and interface are fully available in English.</div>
     <h1>Le blog CoupleDecide</h1>
     <p>Idées, conseils et inspirations pour rendre votre vie de couple plus fun et plus simple au quotidien.</p>
   </div>
@@ -242,5 +244,16 @@
 
 <script src="../js/i18n.js"></script>
 <script src="../js/app.js"></script>
+<script>
+  (function() {
+    function updateLangNotice() {
+      var n = document.getElementById('lang-notice');
+      if (n) n.style.display = (localStorage.getItem('cdw_lang') === 'en') ? 'block' : 'none';
+    }
+    updateLangNotice();
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.addEventListener('click', function() { setTimeout(updateLangNotice, 80); });
+  })();
+</script>
 </body>
 </html>

@@ -58,6 +58,7 @@
     .article-cta-box p { margin: 0 0 1rem; font-weight: 500; }
     .article-back { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 2rem; text-decoration: none; }
     .article-back:hover { color: var(--primary); }
+    .lang-notice { display: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.75rem 1.25rem; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; text-align: center; }
   </style>
 </head>
 <body>
@@ -90,6 +91,7 @@
 <main>
   <div class="article-page">
     <a href="../blog/" class="article-back">← Retour au blog</a>
+    <div id="lang-notice" class="lang-notice" role="note">🇬🇧 This article is currently only available in French.</div>
     <div class="article-meta">
       <span class="article-category">Conseils</span>
       <span class="article-date">25 février 2026</span>
@@ -174,5 +176,16 @@
 
 <script src="../js/i18n.js"></script>
 <script src="../js/app.js"></script>
+<script>
+  (function() {
+    function updateLangNotice() {
+      var n = document.getElementById('lang-notice');
+      if (n) n.style.display = (localStorage.getItem('cdw_lang') === 'en') ? 'block' : 'none';
+    }
+    updateLangNotice();
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.addEventListener('click', function() { setTimeout(updateLangNotice, 80); });
+  })();
+</script>
 </body>
 </html>
