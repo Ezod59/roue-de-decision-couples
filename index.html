@@ -49,6 +49,17 @@
 
   <!-- AdSense: insert <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"> here when ready -->
 
+  <style>
+    .blog-teaser { margin: 2.5rem 0; }
+    .blog-teaser h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .blog-teaser-sub { color: var(--text-muted); margin-bottom: 1.25rem; }
+    .blog-teaser-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1rem; }
+    .blog-teaser-card { display: flex; flex-direction: column; gap: 0.3rem; padding: 1rem; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; transition: border-color var(--transition), transform var(--transition); }
+    .blog-teaser-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .blog-teaser-cat { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); }
+    .blog-teaser-title { font-size: 0.9rem; font-weight: 600; color: var(--text); line-height: 1.4; }
+  </style>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-89WZ4NMW6S"></script>
   <script>
@@ -220,6 +231,33 @@
           <strong>Y a-t-il une roue de décision couple en français, gratuite et sans inscription ?</strong>
           <p>Oui, CoupleDecide est entièrement disponible en français (et anglais), 100% gratuit, sans inscription, sans téléchargement. C'est l'outil idéal pour les couples francophones qui cherchent un moyen simple et ludique de prendre des décisions quotidiennes ensemble.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- BLOG INSPIRATION -->
+    <section class="blog-teaser" aria-label="Articles du blog">
+      <h2>Besoin d'inspiration ?</h2>
+      <p class="blog-teaser-sub">Nos articles pour enrichir votre vie de couple au quotidien.</p>
+      <div class="blog-teaser-grid">
+        <a href="blog/idees-soirees-romantiques-maison.html" class="blog-teaser-card">
+          <span class="blog-teaser-cat">Soirées</span>
+          <span class="blog-teaser-title">20 idées de soirées romantiques à la maison</span>
+        </a>
+        <a href="blog/que-manger-ce-soir-couple.html" class="blog-teaser-card">
+          <span class="blog-teaser-cat">Repas</span>
+          <span class="blog-teaser-title">Que manger ce soir ? Le guide pour les couples indécis</span>
+        </a>
+        <a href="blog/date-night-idees-originales.html" class="blog-teaser-card">
+          <span class="blog-teaser-cat">Soirées</span>
+          <span class="blog-teaser-title">15 idées de date night pour sortir de la routine</span>
+        </a>
+        <a href="blog/complicite-couple-conseils.html" class="blog-teaser-card">
+          <span class="blog-teaser-cat">Conseils</span>
+          <span class="blog-teaser-title">Entretenir la complicité dans son couple</span>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top:1.5rem;">
+        <a href="blog/" class="about-cta" style="font-size:0.9rem; padding:0.65rem 1.5rem;">Voir tous les articles →</a>
       </div>
     </section>
 
