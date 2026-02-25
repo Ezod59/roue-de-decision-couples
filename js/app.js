@@ -370,8 +370,40 @@ function initSharedHeader() {
   applyTranslations(lang);
 }
 
+/* --- Hamburger menu (all pages) --- */
+function initHamburger() {
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('mobileNav');
+  if (!btn || !nav) return;
+
+  btn.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Close menu when a link is clicked */
+  nav.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Close menu on outside click */
+  document.addEventListener('click', e => {
+    if (!btn.contains(e.target) && !nav.contains(e.target)) {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 /* --- Run on DOM ready --- */
 document.addEventListener('DOMContentLoaded', () => {
   initSharedHeader();
+  initHamburger();
   initWheelApp();
 });

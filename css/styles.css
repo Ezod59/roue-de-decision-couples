@@ -410,12 +410,55 @@ details[open] summary::after { content: '−'; }
 .faq-answer a { color: var(--primary); }
 
 /* ============================================================
+   HAMBURGER MENU
+   ============================================================ */
+.hamburger-btn {
+  display: none;
+  width: 36px; height: 36px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  cursor: pointer; flex-direction: column;
+  align-items: center; justify-content: center; gap: 5px;
+  transition: all var(--transition);
+}
+.hamburger-btn:hover { border-color: var(--primary); }
+.hamburger-btn span {
+  display: block; width: 16px; height: 2px;
+  background: var(--text); border-radius: 2px;
+  transition: all 0.3s ease;
+}
+/* Animated X when open */
+.hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile nav dropdown */
+.mobile-nav {
+  display: none;
+  position: absolute; top: 100%; left: 0; right: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  padding: 0.75rem 1.5rem;
+  flex-direction: column; gap: 0.25rem;
+  z-index: 99;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav .nav-link {
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+}
+
+/* ============================================================
    RESPONSIVE — MOBILE
    ============================================================ */
 @media (max-width: 800px) {
   .wheel-layout { grid-template-columns: 1fr; }
   .options-panel { order: 2; }
   .header-nav { display: none; }
+  .hamburger-btn { display: flex; }
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.375rem; }
   .modal-card { padding: 1.5rem; }
