@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://coupledecide.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://coupledecide.com/about.html</loc><priority>0.7</priority></url>
-  <url><loc>https://coupledecide.com/faq.html</loc><priority>0.7</priority></url>
+  <!-- Pages principales -->
+  <url><loc>https://coupledecide.com/</loc><lastmod>2026-02-25</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://coupledecide.com/about.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/faq.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/contact.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coupledecide.com/legal.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://coupledecide.com/privacy.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <!-- Blog -->
+  <url><loc>https://coupledecide.com/blog/</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://coupledecide.com/blog/idees-soirees-romantiques-maison.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/idees-sorties-couple-weekend.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/que-manger-ce-soir-couple.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/repartir-taches-menageres-couple.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/date-night-idees-originales.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/films-romantiques-couple.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/activites-sportives-couple.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/week-end-amoureux-idees.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/communication-couple-quotidien.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/jeux-societe-couple.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/idees-cadeaux-partenaire.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/activites-creatives-couple-maison.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/pique-nique-romantique-guide.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/complicite-couple-conseils.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coupledecide.com/blog/diner-romantique-idees.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
