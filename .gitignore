@@ -1,0 +1,6 @@
+# Local Netlify folder
+.netlify
+
+# Dependencies (installées temporairement pour génération d'assets)
+node_modules/
+package-lock.json
