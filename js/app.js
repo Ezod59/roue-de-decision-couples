@@ -406,8 +406,13 @@ function initHamburger() {
 }
 
 /* --- Run on DOM ready --- */
-document.addEventListener('DOMContentLoaded', () => {
+function _initAll() {
   initSharedHeader();
   initHamburger();
   initWheelApp();
-});
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _initAll);
+} else {
+  _initAll();
+}
