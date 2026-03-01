@@ -1,0 +1,39 @@
+# CoupleDecide
+
+> Roue de décision gratuite pour couples — aide les couples à choisir leurs sorties, repas, activités et tâches ménagères grâce à une roue de fortune animée et personnalisable. Disponible en français et en anglais, sans inscription, 100% dans le navigateur.
+
+## Outil principal
+
+- [Roue de décision pour couples](https://coupledecide.com/): Application web interactive avec 5 catégories (soirée, repas, week-end, activités, tâches ménagères), personnalisation des options, sauvegarde locale, mode sombre, interface bilingue FR/EN. Gratuit, sans compte.
+
+## Pages d'information
+
+- [À propos](https://coupledecide.com/about.html): Histoire et mission de CoupleDecide, pourquoi cet outil a été créé pour les couples indécis.
+- [FAQ](https://coupledecide.com/faq.html): Réponses aux questions fréquentes — fonctionnement de la roue, personnalisation, gratuité, données, compatibilité mobile, langue.
+- [Contact](https://coupledecide.com/contact.html): Formulaire de contact pour questions, suggestions et signalements.
+
+## Blog — Articles sur la vie de couple
+
+- [20 idées de soirées romantiques à la maison](https://coupledecide.com/blog/idees-soirees-romantiques-maison.html): Idées pour passer une soirée mémorable sans sortir — films, jeux, cuisine, bain aux chandelles.
+- [Idées de sorties couple week-end](https://coupledecide.com/blog/idees-sorties-couple-weekend.html): Activités et destinations pour un week-end en amoureux réussi.
+- [Que manger ce soir ? Guide pour couples indécis](https://coupledecide.com/blog/que-manger-ce-soir-couple.html): Conseils et idées pour choisir le repas du soir quand personne ne décide.
+- [Tâches ménagères en couple : les répartir sans se disputer](https://coupledecide.com/blog/repartir-taches-menageres-couple.html): Méthodes pour organiser équitablement les corvées domestiques.
+- [Date night : 15 idées originales](https://coupledecide.com/blog/date-night-idees-originales.html): Idées pour sortir de la routine et vivre des soirées mémorables.
+- [Films romantiques à regarder en couple](https://coupledecide.com/blog/films-romantiques-couple.html): Sélection de films à regarder ensemble, par genre et ambiance.
+- [Activités sportives en couple](https://coupledecide.com/blog/activites-sportives-couple.html): Sports et activités physiques à pratiquer à deux pour renforcer le lien.
+- [Week-end en amoureux : escapade sans se ruiner](https://coupledecide.com/blog/week-end-amoureux-idees.html): Idées de week-ends romantiques accessibles, en France et à la maison.
+- [Mieux communiquer en couple au quotidien](https://coupledecide.com/blog/communication-couple-quotidien.html): Conseils concrets pour améliorer la communication et éviter les conflits.
+- [Jeux de société pour les couples](https://coupledecide.com/blog/jeux-societe-couple.html): Sélection des meilleurs jeux à deux — coopératifs, compétitifs, romantiques.
+- [Idées de cadeaux pour son ou sa partenaire](https://coupledecide.com/blog/idees-cadeaux-partenaire.html): Cadeaux originaux et attentionnés, au-delà des idées classiques.
+- [Activités créatives à faire en couple à la maison](https://coupledecide.com/blog/activites-creatives-couple-maison.html): 12 idées créatives pour s'amuser ensemble sans sortir.
+- [Pique-nique romantique : guide complet](https://coupledecide.com/blog/pique-nique-romantique-guide.html): Organisation, menu et idées pour un pique-nique parfait à deux.
+- [Entretenir la complicité dans son couple](https://coupledecide.com/blog/complicite-couple-conseils.html): Habitudes et rituels pour maintenir la complicité sur la durée.
+- [Dîner romantique : idées pour une soirée mémorable](https://coupledecide.com/blog/diner-romantique-idees.html): Recettes, décoration et ambiance pour un dîner romantique réussi à la maison.
+
+## Informations techniques
+
+- L'outil fonctionne entièrement côté client (HTML, CSS, JavaScript vanilla).
+- Les données utilisateur sont stockées dans le localStorage du navigateur, aucune donnée personnelle n'est collectée.
+- Catégories disponibles : Soirée, Que manger ?, Week-end, Activités, Tâches ménagères.
+- Chaque catégorie contient 8 options par défaut, entièrement personnalisables.
+- L'interface est disponible en français (défaut) et en anglais.
