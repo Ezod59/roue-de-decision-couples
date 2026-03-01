@@ -376,13 +376,19 @@ function initHamburger() {
   const nav = document.getElementById('mobileNav');
   if (!btn || !nav) return;
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = nav.classList.toggle('open');
     btn.classList.toggle('open', isOpen);
     btn.setAttribute('aria-expanded', isOpen);
   });
 
-  /* Close menu when a link is clicked */
+  /* Stop propagation on nav clicks (except links) to prevent outside-click handler */
+  nav.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  /* Close menu when a nav link is clicked */
   nav.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
@@ -392,12 +398,10 @@ function initHamburger() {
   });
 
   /* Close menu on outside click */
-  document.addEventListener('click', e => {
-    if (!btn.contains(e.target) && !nav.contains(e.target)) {
-      nav.classList.remove('open');
-      btn.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
-    }
+  document.addEventListener('click', () => {
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
   });
 }
 
