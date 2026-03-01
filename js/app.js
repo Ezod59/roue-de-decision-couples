@@ -408,7 +408,6 @@ function initHamburger() {
 /* --- Run on DOM ready --- */
 function _initAll() {
   initSharedHeader();
-  initHamburger();
   initWheelApp();
 }
 if (document.readyState === 'loading') {

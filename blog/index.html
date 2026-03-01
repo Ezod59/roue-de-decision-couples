@@ -72,6 +72,9 @@
     <a href="../blog/" class="nav-link active">Blog</a>
   </nav>
 </header>
+<script>/* hamburger */
+(function(){var btn=document.getElementById('menuToggle'),nav=document.getElementById('mobileNav');if(!btn||!nav)return;var lt=0;function set(v){nav.classList.toggle('open',v);btn.classList.toggle('open',v);btn.setAttribute('aria-expanded',String(v));}btn.addEventListener('touchstart',function(e){e.stopPropagation();},{passive:true});btn.addEventListener('touchend',function(e){e.stopPropagation();e.preventDefault();lt=Date.now();set(!nav.classList.contains('open'));},{passive:false});btn.addEventListener('click',function(e){e.stopPropagation();if(Date.now()-lt<500)return;set(!nav.classList.contains('open'));});nav.addEventListener('touchstart',function(e){e.stopPropagation();},{passive:true});nav.addEventListener('click',function(e){e.stopPropagation();});nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false);});});document.addEventListener('touchstart',function(){set(false);},{passive:true});document.addEventListener('click',function(){set(false);});})();
+</script>
 
 <main>
   <div class="blog-hero">
